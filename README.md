@@ -1,5 +1,4 @@
 # MSU
-
 Student online portal page
 ![alt tag](https://cloud.githubusercontent.com/assets/4743756/18693478/8ab334be-7f67-11e6-8375-ef9322625766.PNG)
 
