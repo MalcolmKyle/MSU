@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MSU.Models.EnrollmentDateGroup>
+@{
+    ViewBag.Title = "Student body statistics";
+}
+<h3>@ViewBag.Message</h3>
+
+<table cellpadding="5" >
+    <tr><th>Enrollment Date</th><th>Students</th></tr>
+    @foreach(var item in Model)
+    {
+        <tr><td align="center">@Html.DisplayFor(modelItem=>item.EnrollmentDate)</td>
+            <td align="center">@item.studentCount</td>
+        </tr>
+    }
+</table>
