@@ -32,7 +32,7 @@ namespace MSU.Models
         public virtual ICollection<Course> Courses { get; set; }
         // Each instructor must have an office
         // Add room number to classes model?
-        [Display(Name ="Office")]
+      //  [Display(Name ="Office")]
         public virtual OfficeAssignment OfficeAssignemnt { get; set; }
     }
 }

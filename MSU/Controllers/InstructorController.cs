@@ -98,7 +98,8 @@ namespace MSU.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Instructor instructor = db.Instructors.Find(id);
+            Instructor instructor = db.Instructors.Include(i=>i.OfficeAssignemnt)
+                .Where(i=>i.InstructorId == id).Single();
             if (instructor == null)
             {
                 return HttpNotFound();
